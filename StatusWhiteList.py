@@ -24,7 +24,7 @@ ru_hosts = {
   "Cyberlenika": "cyberleninka.ru",
   "Businessmens": "businessmens.ru",
   "Health-Diet": "health-diet.ru",
-  "Kwork": "kwork.ru"
+  "secrets-tbank": "secrets.tbank.ru"
 }
 
 WhiteList_host = {
