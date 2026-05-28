@@ -1,0 +1,38 @@
+{
+  "en_hosts": {
+    "Google": "google.com",
+    "GitHub": "github.com",
+    "Pinterest": "pinterest.com",
+    "GitLab": "gitlab.com",
+    "Docker": "docker.com",
+    "Gitea": "about.gitea.com",
+    "Oxk": "okx.com",
+    "GitBook": "app.gitbook.com",
+    "Dropbox": "dropbox.com",
+    "Pixlr": "pixlr.com"
+  },
+  "ru_hosts": {
+    "Tproger": "tproger.ru",
+    "Woordhunt": "wooordhunt.ru",
+    "Mega": "mega.ru",
+    "Shoko": "shoko.ru",
+    "Zenden": "zenden.ru",
+    "Tvoe": "tvoe.ru",
+    "Cyberlenika": "cyberleninka.ru",
+    "Businessmens": "businessmens.ru",
+    "Health-Diet": "health-diet.ru",
+    "secrets-tbank": "secrets.tbank.ru"
+  },
+  "WhiteList_host": {
+    "Max": "web.max.ru",
+    "Yandex": "ya.ru",
+    "Vk": "vk.ru",
+    "Avito": "avito.ru",
+    "Moex": "moex.com",
+    "RuStore": "rustore.ru",
+    "Gismeteo": "gismeteo.ru",
+    "Ozon": "ozon.ru",
+    "Wildberries": "wildberries.ru",
+    "2Gis": "2gis.ru"
+  }
+}

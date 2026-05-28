@@ -1,44 +1,24 @@
 from ping3 import ping
 import time
+import json
+import os
 
-en_hosts = {
-  "Google": "google.com",
-  "GitHub": "github.com",
-  "Pinterest": "pinterest.com",
-  "GitLab": "gitlab.com",
-  "Docker": "docker.com",
-  "Gitea": "about.gitea.com",
-  "Oxk": "okx.com",
-  "GitBook": "app.gitbook.com",
-  "Dropbox": "dropbox.com",
-  "Pixlr": "pixlr.com"
-}
+script_dir = os.path.dirname(os.path.abspath(__file__))
+hosts_path = os.path.join(script_dir, "hosts.json")
 
-ru_hosts = {
-  "Tproger": "tproger.ru",
-  "Woordhunt": "wooordhunt.ru",
-  "Mega": "mega.ru",
-  "Shoko": "shoko.ru",
-  "Zenden": "zenden.ru",
-  "Tvoe": "tvoe.ru",
-  "Cyberlenika": "cyberleninka.ru",
-  "Businessmens": "businessmens.ru",
-  "Health-Diet": "health-diet.ru",
-  "secrets-tbank": "secrets.tbank.ru"
-}
+try:
+  with open(hosts_path, "r", encoding="utf-8") as f:
+    hosts_data = json.load(f)
+    en_hosts = hosts_data["en_hosts"]
+    ru_hosts = hosts_data["ru_hosts"]
+    WhiteList_host = hosts_data["WhiteList_host"]
+except FileNotFoundError:
+    print("❌ Файл hosts.json не найден в папке скрипта.")
+    exit(1)
+except json.JSONDecodeError:
+    print("❌ Ошибка чтения JSON. Проверьте формат hosts.json.")
+    exit(1)
 
-WhiteList_host = {
-  "Max" : "web.max.ru",
-  "Yandex" : "ya.ru",
-  "Vk" : "vk.ru",
-  "Avito" : "avito.ru",
-  "Moex" : "moex.com",
-  "RuStore" : "rustore.ru",
-  "Gismeteo" : "gismeteo.ru",
-  "Ozon" : "ozon.ru",
-  "Wildberries" : "wildberries.ru",
-  "2Gis" : "2gis.ru"
-}
 
 while True:
   host_check = input("Какие домены будем пинговать? 1 - EN. 2 - RU. Введите число: ")
