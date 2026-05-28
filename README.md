@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/TheBlackies/Chek-WhiteList-Russia-Federation/blob/main/LICENSE)
+[![JSON](https://img.shields.io/badge/JSON-000000?style=flat&logo=json&logoColor=white)](https://www.json.org/json-en.html)
 
 ### Для использования скрипта нужны:
 
